@@ -1,0 +1,72 @@
+const chartData = {
+  data:[
+    {
+      title:'男生',
+      detail:[
+        {
+          date:'2024/09/29',
+          value:2
+        },
+        {
+          date:'2024/09/30',
+          value:1
+        },
+        {
+          date:'2024/10/01',
+          value:1
+        },
+        {
+          date:'2024/10/02',
+          value:5
+        },
+        {
+          date:'2024/10/03',
+          value:2
+        },
+        {
+          date:'2024/10/04',
+          value:2
+        }
+      ]
+    },{
+      title:'女生',
+      detail:[
+        {
+          date:'2024/09/29',
+          value:3
+        },
+        {
+          date:'2024/09/30',
+          value:2
+        },
+        {
+          date:'2024/10/01',
+          value:3
+        },
+        {
+          date:'2024/10/02',
+          value:10
+        },
+        {
+          date:'2024/10/03',
+          value:2
+        },
+        {
+          date:'2024/10/04',
+          value:4
+        }
+      ]
+    }
+  ],
+  info:{
+    visitor: 86,
+    prevVisitorRatio: -51,
+    ratio:58.8,
+    prevRatio: 13.8
+  },
+  chartData:{
+    xAxis:[],
+    yAxis:[],
+    total:[5, 3, 4, 15, 4, 6]
+  }
+}
