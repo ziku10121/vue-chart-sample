@@ -357,29 +357,6 @@ const renderLegend = () => {
       `<span style="color:#ff0000;font-size:12px;font-weight: bold;margin-right:5px">(此處不是canvas產出)</span>` +
       legendHTML;
   }
-  //   `
-  //   <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-  //     <div>
-  //       <span style="background-color: #f00; width: 10px; height: 10px; display: inline-block;"></span> Dataset 1
-  //     </div>
-  //     <div>
-  //       <span style="background-color: #0f0; width: 10px; height: 10px; display: inline-block;"></span> Dataset 2
-  //     </div>
-  //     <div>
-  //       <span style="background-color: #00f; width: 10px; height: 10px; display: inline-block;"></span> Dataset 3
-  //     </div>
-  //     <div>
-  //       <span style="background-color: #f00; width: 10px; height: 10px; display: inline-block;"></span> Dataset 1
-  //     </div>
-  //     <div>
-  //       <span style="background-color: #0f0; width: 10px; height: 10px; display: inline-block;"></span> Dataset 2
-  //     </div>
-  //     <div>
-  //       <span style="background-color: #00f; width: 10px; height: 10px; display: inline-block;"></span> Dataset 3
-  //     </div>
-  //     <!-- 添加更多图例项 -->
-  //   </div>
-  // `;
 };
 /**
  * 第一方法: beforeInit + afterDraw

@@ -216,9 +216,15 @@ onMounted(() => {
     data: [
       {
         x: "100",
-        y: "100",
-        radius: 100,
-        value: 99,
+        y: "50",
+        radius: 45,
+        value: 70,
+      },
+      {
+        x: "150",
+        y: "50",
+        radius: 45,
+        value: 80,
       },
     ],
   };

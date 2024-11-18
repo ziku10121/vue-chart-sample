@@ -9,7 +9,7 @@ import peopleChart from "../components/PeopleChart/index.vue";
 
 import { ref, computed } from "vue";
 
-const currentTab = ref("peopleChart");
+const currentTab = ref("barChart");
 
 // Define available tabs and their corresponding components
 const tabs = {
@@ -27,7 +27,7 @@ const currentTabComponent = computed(() => tabs[currentTab.value]);
 </script>
 
 <template>
-  <div>
+  <div class="d-flex justify-content-center align-items-center mb-5">
     <a href="/#">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
