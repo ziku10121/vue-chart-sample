@@ -54,8 +54,8 @@ const rateText = ref("50");
 
 const options = {
   responsive: true,
-  // maintainAspectRatio: true, //是否保持寬高比
-  // aspectRatio:2,
+  maintainAspectRatio: true, //是否保持寬高比
+  // aspectRatio: 2,
   /** animation TYPES
    * duration
    * easing
@@ -120,13 +120,15 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="chart">
+  <div class="chart-container">
     <canvas ref="chartRef"></canvas>
   </div>
 </template>
 <style lang="scss" scoped>
 canvas {
-  max-width: 100%; /* 圖表畫布自適應容器寬度 */
   max-height: 100%; /* 圖表畫布自適應容器高度 */
+}
+.chart-container {
+  max-height: 300px;
 }
 </style>

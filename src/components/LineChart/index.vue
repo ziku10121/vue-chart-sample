@@ -28,8 +28,8 @@ const data = {
     {
       label: "入口",
       data: [200, 300, 100],
-      borderColor: "#fff000",
-      backgroundColor: "rgba(0, 0, 255, 0.5)",
+      // borderColor: "#fff000",
+      // backgroundColor: "rgba(0, 0, 255, 0.5)",
       /** pointStyle TYPES
        * 'circle':(預設)圈圈
        * 'cross':加號
@@ -44,16 +44,16 @@ const data = {
        */
       pointStyle: "star",
       //radius: 0, //point size
-      pointBackgroundColor: "rgba(255,0,255,1)", //set point background color
-      pointBorderColor: "rgba(255,0,255,1)", //set point border color
+      // pointBackgroundColor: "rgba(255,0,255,1)", //set point background color
+      // pointBorderColor: "rgba(255,0,255,1)", //set point border color
       fill: true,
       tension: 0.5, //數值越小越緊，越大越靈活
     },
     {
       label: "A區",
       data: [300, 550, 200],
-      borderColor: "rgba(0,0,0,0.2)",
-      backgroundColor: "rgba(255, 0, 0, 0.5)",
+      // borderColor: "rgba(0,0,0,0.2)",
+      // backgroundColor: "rgba(255, 0, 0, 0.5)",
       fill: true,
       tension: 0.5,
     },
@@ -92,16 +92,16 @@ const options = {
   },
   scales: {
     x: {
-      display: false,
+      // display: false,
       title: {
         display: true,
         text: "Date",
       },
     },
     y: {
+      // display: false,
       beginAtZero: true,
       max: 1000,
-      display: false,
       title: {
         display: true,
         text: "People",
@@ -122,8 +122,12 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div>
-    <canvas ref="chartRef" width="600" height="400"></canvas>
+  <div class="chart-container d-flex justify-content-center">
+    <canvas ref="chartRef"></canvas>
   </div>
 </template>
-<style lang="scss"></style>
+<style lang="scss">
+.chart-container {
+  max-height: 300px;
+}
+</style>

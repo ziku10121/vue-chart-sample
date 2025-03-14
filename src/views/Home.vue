@@ -27,7 +27,7 @@ const currentTabComponent = computed(() => tabs[currentTab.value]);
 </script>
 
 <template>
-  <div class="d-flex justify-content-center align-items-center mb-5">
+  <div class="d-flex justify-content-center align-items-center mb-3">
     <a href="/#">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -113,15 +113,7 @@ const currentTabComponent = computed(() => tabs[currentTab.value]);
     </ul>
 
     <!-- Show Components Based on Tab -->
-    <div
-      class="p-4"
-      style="
-        border: 1px solid #dee2e6;
-        border-top: none;
-        width: 720px;
-        height: 480px;
-      "
-    >
+    <div class="p-4" style="border: 1px solid #dee2e6; border-top: none">
       <component :is="currentTabComponent"></component>
     </div>
   </div>

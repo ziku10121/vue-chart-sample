@@ -243,12 +243,12 @@ onMounted(() => {
     <button class="btn btn-primary" @click="clearHeatMap">Clear</button>
   </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .heatmapCanvas {
-  max-width: 100%;
-  max-height: 100%;
+  max-height: 300px;
   img {
     width: 100%;
+    max-height: 300px;
     aspect-ratio: 16 / 9;
     /* object-fit: cover; */
     border-radius: 1rem;

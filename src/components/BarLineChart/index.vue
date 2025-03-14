@@ -99,6 +99,13 @@ onMounted(() => {
 });
 </script>
 <template>
-  <canvas ref="chartRef" width="600" height="300"></canvas>
+  <div class="chart-container d-flex justify-content-center">
+    <canvas ref="chartRef"></canvas>
+  </div>
   <button class="mt-2 btn btn-primary" @click="changeRounded">Change</button>
 </template>
+<style lang="scss" scoped>
+.chart-container {
+  max-height: 300px;
+}
+</style>

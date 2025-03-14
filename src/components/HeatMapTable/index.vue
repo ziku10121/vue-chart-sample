@@ -214,8 +214,12 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div>
-    <canvas ref="chartRef" width="600" height="400"></canvas>
+  <div class="chart-container d-flex justify-content-center">
+    <canvas ref="chartRef"></canvas>
   </div>
 </template>
-<style lang="scss"></style>
+<style lang="scss">
+.chart-container {
+  max-height: 300px;
+}
+</style>
